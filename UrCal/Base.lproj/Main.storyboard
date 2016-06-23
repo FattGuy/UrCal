@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
@@ -113,14 +114,112 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gQc-B5-ZD0">
-                        <barButtonItem key="leftBarButtonItem" image="home_menu_bar_button" id="6ci-N3-Gro" userLabel="Menu Bar Button">
-                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <barButtonItem key="leftBarButtonItem" id="cNW-au-aqW">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fkS-su-qI4">
+                                <rect key="frame" x="20" y="7" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="home_menu_bar_button"/>
+                                <connections>
+                                    <action selector="showSideMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rct-ZJ-Gkc"/>
+                                </connections>
+                            </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="begButton" destination="yEm-RG-Lfk" id="Wuu-g2-WFc"/>
+                        <outlet property="buiButton" destination="iVg-qG-dYb" id="2dm-wP-gx1"/>
+                        <outlet property="findbutton" destination="koI-Rp-DGE" id="naQ-QQ-iJI"/>
+                        <outlet property="intButton" destination="tM8-cO-12I" id="mqY-Bl-tKA"/>
+                        <outlet property="mButton" destination="fzy-Kh-cHG" id="EgA-lH-UNQ"/>
+                        <outlet property="tranButton" destination="0vo-7j-rgo" id="NIz-Jl-n1P"/>
+                        <outlet property="woButton" destination="ggI-8X-oHi" id="Cpl-w6-cD4"/>
+                        <segue destination="Hhg-iu-BLJ" kind="show" identifier="toSideMenu" id="WvJ-m1-1zi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1066" y="1078"/>
+        </scene>
+        <!--Side Menu View Controller-->
+        <scene sceneID="EBU-RD-fNa">
+            <objects>
+                <viewController storyboardIdentifier="SideMenuViewController" id="Hhg-iu-BLJ" customClass="SideMenuViewController" customModule="UrCal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VpK-nj-J8H"/>
+                        <viewControllerLayoutGuide type="bottom" id="5ud-vi-48X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0N7-uZ-qge">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QcF-kJ-SAA">
+                                <rect key="frame" x="108" y="268" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Vcf-dc-1qW"/>
+                                    <constraint firstAttribute="height" constant="70" id="dZi-Ll-oWa"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="APy-lx-MTC">
+                                <rect key="frame" x="108" y="368" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="0zX-iy-3XD"/>
+                                    <constraint firstAttribute="width" constant="70" id="uu0-5B-eCj"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhC-rU-9bc">
+                                <rect key="frame" x="213" y="182" width="167" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="MyPlan"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X1k-kB-qfG">
+                                <rect key="frame" x="108" y="162" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="A7F-iV-kI9"/>
+                                    <constraint firstAttribute="height" constant="70" id="DRg-81-UMw"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T78-io-Dmr">
+                                <rect key="frame" x="213" y="288" width="167" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="MyStats"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKM-pg-LO8">
+                                <rect key="frame" x="213" y="388" width="167" height="30"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.67450980390000004" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Profile"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QcF-kJ-SAA" firstAttribute="top" secondItem="X1k-kB-qfG" secondAttribute="bottom" constant="36" id="01h-YH-3Sk"/>
+                            <constraint firstItem="APy-lx-MTC" firstAttribute="leading" secondItem="0N7-uZ-qge" secondAttribute="leadingMargin" constant="88" id="0bQ-zg-NOY"/>
+                            <constraint firstItem="CKM-pg-LO8" firstAttribute="top" secondItem="T78-io-Dmr" secondAttribute="bottom" constant="70" id="6PA-Dj-Zzt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CKM-pg-LO8" secondAttribute="trailing" constant="200" id="Flj-Jq-nFC"/>
+                            <constraint firstItem="T78-io-Dmr" firstAttribute="leading" secondItem="QcF-kJ-SAA" secondAttribute="trailing" constant="35" id="InF-s4-V55"/>
+                            <constraint firstItem="5ud-vi-48X" firstAttribute="top" secondItem="APy-lx-MTC" secondAttribute="bottom" constant="162" id="LGu-g5-EYM"/>
+                            <constraint firstItem="APy-lx-MTC" firstAttribute="top" secondItem="QcF-kJ-SAA" secondAttribute="bottom" constant="30" id="OcC-2w-XvN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="T78-io-Dmr" secondAttribute="trailing" constant="200" id="PLC-Kg-Se4"/>
+                            <constraint firstItem="T78-io-Dmr" firstAttribute="top" secondItem="IhC-rU-9bc" secondAttribute="bottom" constant="76" id="QP0-wd-x7z"/>
+                            <constraint firstItem="5ud-vi-48X" firstAttribute="top" secondItem="CKM-pg-LO8" secondAttribute="bottom" constant="182" id="XQM-Qy-T3v"/>
+                            <constraint firstItem="QcF-kJ-SAA" firstAttribute="leading" secondItem="0N7-uZ-qge" secondAttribute="leadingMargin" constant="88" id="eBN-nJ-pg4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IhC-rU-9bc" secondAttribute="trailing" constant="200" id="i5a-dS-YGU"/>
+                            <constraint firstItem="IhC-rU-9bc" firstAttribute="leading" secondItem="X1k-kB-qfG" secondAttribute="trailing" constant="35" id="q9A-Gi-BZE"/>
+                            <constraint firstItem="X1k-kB-qfG" firstAttribute="leading" secondItem="0N7-uZ-qge" secondAttribute="leadingMargin" constant="88" id="wHG-Rr-gZa"/>
+                            <constraint firstItem="CKM-pg-LO8" firstAttribute="leading" secondItem="APy-lx-MTC" secondAttribute="trailing" constant="35" id="wfc-Vc-Qdg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myplanButton" destination="IhC-rU-9bc" id="eoc-lj-at4"/>
+                        <outlet property="myplanImage" destination="X1k-kB-qfG" id="WWN-1m-xBT"/>
+                        <outlet property="mystatsButton" destination="T78-io-Dmr" id="vlO-e4-l0J"/>
+                        <outlet property="mystatsImage" destination="QcF-kJ-SAA" id="wdb-96-p73"/>
+                        <outlet property="profileButton" destination="CKM-pg-LO8" id="gsm-7J-RQm"/>
+                        <outlet property="profileImage" destination="APy-lx-MTC" id="vlk-ec-c7U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OC0-EV-GcL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1712" y="1078"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SMH-Af-gz1">

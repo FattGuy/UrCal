@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		638B5444963E37BA04DC98C5 /* Pods_UrCal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED3BE28AED83044C0883C0B /* Pods_UrCal.framework */; };
 		F24EFE2A1D1C5FD800C59430 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24EFE291D1C5FD800C59430 /* AppDelegate.swift */; };
 		F24EFE2F1D1C5FD800C59430 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F24EFE2D1D1C5FD800C59430 /* Main.storyboard */; };
 		F24EFE311D1C5FD800C59430 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F24EFE301D1C5FD800C59430 /* Image.xcassets */; };
@@ -14,6 +15,8 @@
 		F24EFE3F1D1C5FD800C59430 /* UrCalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24EFE3E1D1C5FD800C59430 /* UrCalTests.swift */; };
 		F24EFE4A1D1C5FD800C59430 /* UrCalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24EFE491D1C5FD800C59430 /* UrCalUITests.swift */; };
 		F24EFE5F1D1C621300C59430 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24EFE5E1D1C621300C59430 /* HomeViewController.swift */; };
+		F24EFE621D1C6F6000C59430 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24EFE611D1C6F6000C59430 /* SideMenuViewController.swift */; };
+		F24EFE651D1C6FA700C59430 /* GuillotineMenuTransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24EFE641D1C6FA700C59430 /* GuillotineMenuTransitionAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19F8C8F0CEE13D92B39FD8F5 /* Pods-UrCal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrCal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UrCal/Pods-UrCal.debug.xcconfig"; sourceTree = "<group>"; };
+		4BA62835F34FC2D1A924E516 /* Pods-UrCal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrCal.release.xcconfig"; path = "Pods/Target Support Files/Pods-UrCal/Pods-UrCal.release.xcconfig"; sourceTree = "<group>"; };
+		CED3BE28AED83044C0883C0B /* Pods_UrCal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UrCal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F24EFE261D1C5FD800C59430 /* UrCal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrCal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F24EFE291D1C5FD800C59430 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F24EFE2E1D1C5FD800C59430 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,6 +53,8 @@
 		F24EFE491D1C5FD800C59430 /* UrCalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrCalUITests.swift; sourceTree = "<group>"; };
 		F24EFE4B1D1C5FD800C59430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F24EFE5E1D1C621300C59430 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F24EFE611D1C6F6000C59430 /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		F24EFE641D1C6FA700C59430 /* GuillotineMenuTransitionAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuillotineMenuTransitionAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				638B5444963E37BA04DC98C5 /* Pods_UrCal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		714DCBF41B50ECC60BE46C49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CED3BE28AED83044C0883C0B /* Pods_UrCal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A32A6A8F9823B70A3D695682 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19F8C8F0CEE13D92B39FD8F5 /* Pods-UrCal.debug.xcconfig */,
+				4BA62835F34FC2D1A924E516 /* Pods-UrCal.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F24EFE1D1D1C5FD800C59430 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +107,8 @@
 				F24EFE3D1D1C5FD800C59430 /* UrCalTests */,
 				F24EFE481D1C5FD800C59430 /* UrCalUITests */,
 				F24EFE271D1C5FD800C59430 /* Products */,
+				A32A6A8F9823B70A3D695682 /* Pods */,
+				714DCBF41B50ECC60BE46C49 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +125,7 @@
 		F24EFE281D1C5FD800C59430 /* UrCal */ = {
 			isa = PBXGroup;
 			children = (
+				F24EFE631D1C6F8500C59430 /* exLib */,
 				F24EFE5B1D1C611400C59430 /* Common */,
 				F24EFE5A1D1C610900C59430 /* Service */,
 				F24EFE591D1C610300C59430 /* Model */,
@@ -166,9 +195,10 @@
 		F24EFE5C1D1C61D800C59430 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F24EFE601D1C6F3000C59430 /* SideMenu */,
 				F24EFE5D1D1C620200C59430 /* Home */,
-				F24EFE2D1D1C5FD800C59430 /* Main.storyboard */,
 				F24EFE301D1C5FD800C59430 /* Image.xcassets */,
+				F24EFE2D1D1C5FD800C59430 /* Main.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -181,6 +211,22 @@
 			name = Home;
 			sourceTree = "<group>";
 		};
+		F24EFE601D1C6F3000C59430 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				F24EFE611D1C6F6000C59430 /* SideMenuViewController.swift */,
+			);
+			name = SideMenu;
+			sourceTree = "<group>";
+		};
+		F24EFE631D1C6F8500C59430 /* exLib */ = {
+			isa = PBXGroup;
+			children = (
+				F24EFE641D1C6FA700C59430 /* GuillotineMenuTransitionAnimation.swift */,
+			);
+			name = exLib;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -188,9 +234,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F24EFE4E1D1C5FD800C59430 /* Build configuration list for PBXNativeTarget "UrCal" */;
 			buildPhases = (
+				0562ABAFEB9870AC7C65EB7F /* [CP] Check Pods Manifest.lock */,
 				F24EFE221D1C5FD800C59430 /* Sources */,
 				F24EFE231D1C5FD800C59430 /* Frameworks */,
 				F24EFE241D1C5FD800C59430 /* Resources */,
+				C93F3118FBAEB2BB98D33D2F /* [CP] Embed Pods Frameworks */,
+				CEA08330E97EFDFBB1B962EF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -307,12 +356,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0562ABAFEB9870AC7C65EB7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C93F3118FBAEB2BB98D33D2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UrCal/Pods-UrCal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEA08330E97EFDFBB1B962EF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UrCal/Pods-UrCal-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F24EFE221D1C5FD800C59430 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F24EFE2A1D1C5FD800C59430 /* AppDelegate.swift in Sources */,
+				F24EFE621D1C6F6000C59430 /* SideMenuViewController.swift in Sources */,
+				F24EFE651D1C6FA700C59430 /* GuillotineMenuTransitionAnimation.swift in Sources */,
 				F24EFE5F1D1C621300C59430 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,6 +552,7 @@
 		};
 		F24EFE4F1D1C5FD800C59430 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19F8C8F0CEE13D92B39FD8F5 /* Pods-UrCal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UrCal/Info.plist;
@@ -464,6 +564,7 @@
 		};
 		F24EFE501D1C5FD800C59430 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BA62835F34FC2D1A924E516 /* Pods-UrCal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UrCal/Info.plist;
@@ -538,6 +639,7 @@
 				F24EFE501D1C5FD800C59430 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F24EFE511D1C5FD800C59430 /* Build configuration list for PBXNativeTarget "UrCalTests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +648,7 @@
 				F24EFE531D1C5FD800C59430 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F24EFE541D1C5FD800C59430 /* Build configuration list for PBXNativeTarget "UrCalUITests" */ = {
 			isa = XCConfigurationList;
@@ -554,6 +657,7 @@
 				F24EFE561D1C5FD800C59430 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
