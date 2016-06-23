@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		F24EFE2A1D1C5FD800C59430 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24EFE291D1C5FD800C59430 /* AppDelegate.swift */; };
 		F24EFE2F1D1C5FD800C59430 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F24EFE2D1D1C5FD800C59430 /* Main.storyboard */; };
-		F24EFE311D1C5FD800C59430 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F24EFE301D1C5FD800C59430 /* Assets.xcassets */; };
+		F24EFE311D1C5FD800C59430 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F24EFE301D1C5FD800C59430 /* Image.xcassets */; };
 		F24EFE341D1C5FD800C59430 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F24EFE321D1C5FD800C59430 /* LaunchScreen.storyboard */; };
 		F24EFE3F1D1C5FD800C59430 /* UrCalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24EFE3E1D1C5FD800C59430 /* UrCalTests.swift */; };
 		F24EFE4A1D1C5FD800C59430 /* UrCalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24EFE491D1C5FD800C59430 /* UrCalUITests.swift */; };
+		F24EFE5F1D1C621300C59430 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24EFE5E1D1C621300C59430 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 		F24EFE261D1C5FD800C59430 /* UrCal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrCal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F24EFE291D1C5FD800C59430 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F24EFE2E1D1C5FD800C59430 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F24EFE301D1C5FD800C59430 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F24EFE301D1C5FD800C59430 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		F24EFE331D1C5FD800C59430 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F24EFE351D1C5FD800C59430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F24EFE3A1D1C5FD800C59430 /* UrCalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UrCalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +46,7 @@
 		F24EFE451D1C5FD800C59430 /* UrCalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UrCalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F24EFE491D1C5FD800C59430 /* UrCalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrCalUITests.swift; sourceTree = "<group>"; };
 		F24EFE4B1D1C5FD800C59430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F24EFE5E1D1C621300C59430 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +97,12 @@
 		F24EFE281D1C5FD800C59430 /* UrCal */ = {
 			isa = PBXGroup;
 			children = (
-				F24EFE291D1C5FD800C59430 /* AppDelegate.swift */,
-				F24EFE2D1D1C5FD800C59430 /* Main.storyboard */,
-				F24EFE301D1C5FD800C59430 /* Assets.xcassets */,
+				F24EFE5B1D1C611400C59430 /* Common */,
+				F24EFE5A1D1C610900C59430 /* Service */,
+				F24EFE591D1C610300C59430 /* Model */,
+				F24EFE581D1C60FE00C59430 /* UI */,
+				F24EFE571D1C60F600C59430 /* Config */,
 				F24EFE321D1C5FD800C59430 /* LaunchScreen.storyboard */,
-				F24EFE351D1C5FD800C59430 /* Info.plist */,
 			);
 			path = UrCal;
 			sourceTree = "<group>";
@@ -120,6 +123,62 @@
 				F24EFE4B1D1C5FD800C59430 /* Info.plist */,
 			);
 			path = UrCalUITests;
+			sourceTree = "<group>";
+		};
+		F24EFE571D1C60F600C59430 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				F24EFE351D1C5FD800C59430 /* Info.plist */,
+				F24EFE291D1C5FD800C59430 /* AppDelegate.swift */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		F24EFE581D1C60FE00C59430 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F24EFE5C1D1C61D800C59430 /* View */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		F24EFE591D1C610300C59430 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F24EFE5A1D1C610900C59430 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		F24EFE5B1D1C611400C59430 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		F24EFE5C1D1C61D800C59430 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F24EFE5D1D1C620200C59430 /* Home */,
+				F24EFE2D1D1C5FD800C59430 /* Main.storyboard */,
+				F24EFE301D1C5FD800C59430 /* Image.xcassets */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F24EFE5D1D1C620200C59430 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F24EFE5E1D1C621300C59430 /* HomeViewController.swift */,
+			);
+			name = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,7 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F24EFE341D1C5FD800C59430 /* LaunchScreen.storyboard in Resources */,
-				F24EFE311D1C5FD800C59430 /* Assets.xcassets in Resources */,
+				F24EFE311D1C5FD800C59430 /* Image.xcassets in Resources */,
 				F24EFE2F1D1C5FD800C59430 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F24EFE2A1D1C5FD800C59430 /* AppDelegate.swift in Sources */,
+				F24EFE5F1D1C621300C59430 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
