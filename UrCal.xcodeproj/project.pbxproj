@@ -20,6 +20,9 @@
 		F254967E1D21B616000493BB /* MyPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F254967D1D21B616000493BB /* MyPlanViewController.swift */; };
 		F25496801D21B622000493BB /* MyStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F254967F1D21B622000493BB /* MyStatsViewController.swift */; };
 		F25496821D21B62D000493BB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25496811D21B62D000493BB /* ProfileViewController.swift */; };
+		F25496861D21B812000493BB /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25496851D21B812000493BB /* SearchTableViewController.swift */; };
+		F25496881D21B81E000493BB /* IngredientTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25496871D21B81E000493BB /* IngredientTableViewController.swift */; };
+		F254968C1D21B8B1000493BB /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F254968B1D21B8B1000493BB /* SearchTableViewCell.swift */; };
 		F28262781D21814C00AB980B /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28262771D21814C00AB980B /* NavViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +65,9 @@
 		F254967D1D21B616000493BB /* MyPlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPlanViewController.swift; sourceTree = "<group>"; };
 		F254967F1D21B622000493BB /* MyStatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStatsViewController.swift; sourceTree = "<group>"; };
 		F25496811D21B62D000493BB /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F25496851D21B812000493BB /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		F25496871D21B81E000493BB /* IngredientTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientTableViewController.swift; sourceTree = "<group>"; };
+		F254968B1D21B8B1000493BB /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		F28262771D21814C00AB980B /* NavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -203,6 +209,8 @@
 		F24EFE5C1D1C61D800C59430 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F25496841D21B7F9000493BB /* Ingredient */,
+				F25496831D21B7D1000493BB /* Search */,
 				F28262761D21813600AB980B /* Nav */,
 				F24EFE601D1C6F3000C59430 /* SideMenu */,
 				F24EFE5D1D1C620200C59430 /* Home */,
@@ -245,6 +253,39 @@
 				F25496811D21B62D000493BB /* ProfileViewController.swift */,
 			);
 			name = popOverView;
+			sourceTree = "<group>";
+		};
+		F25496831D21B7D1000493BB /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				F25496891D21B89A000493BB /* cell */,
+				F25496851D21B812000493BB /* SearchTableViewController.swift */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		F25496841D21B7F9000493BB /* Ingredient */ = {
+			isa = PBXGroup;
+			children = (
+				F254968A1D21B8A1000493BB /* cell */,
+				F25496871D21B81E000493BB /* IngredientTableViewController.swift */,
+			);
+			name = Ingredient;
+			sourceTree = "<group>";
+		};
+		F25496891D21B89A000493BB /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				F254968B1D21B8B1000493BB /* SearchTableViewCell.swift */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		F254968A1D21B8A1000493BB /* cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = cell;
 			sourceTree = "<group>";
 		};
 		F28262761D21813600AB980B /* Nav */ = {
@@ -438,10 +479,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F24EFE2A1D1C5FD800C59430 /* AppDelegate.swift in Sources */,
+				F25496861D21B812000493BB /* SearchTableViewController.swift in Sources */,
 				F254967E1D21B616000493BB /* MyPlanViewController.swift in Sources */,
 				F25496801D21B622000493BB /* MyStatsViewController.swift in Sources */,
+				F254968C1D21B8B1000493BB /* SearchTableViewCell.swift in Sources */,
 				F28262781D21814C00AB980B /* NavViewController.swift in Sources */,
 				F24EFE621D1C6F6000C59430 /* SideMenuViewController.swift in Sources */,
+				F25496881D21B81E000493BB /* IngredientTableViewController.swift in Sources */,
 				F24EFE651D1C6FA700C59430 /* GuillotineMenuTransitionAnimation.swift in Sources */,
 				F25496821D21B62D000493BB /* ProfileViewController.swift in Sources */,
 				F24EFE5F1D1C621300C59430 /* HomeViewController.swift in Sources */,

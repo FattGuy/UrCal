@@ -49,12 +49,19 @@ class HomeViewController: UIViewController, UIViewControllerTransitioningDelegat
         self.presentViewController(menuVC, animated: true, completion: nil)
     }
     
+    @IBAction func findButtonPressed(sender: UIButton) {
+        self.performSegueWithIdentifier("showSearch", sender: sender)
+    }
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+//        if segue.identifier == "showSearch" {
+//            <#code#>
+//        }
         
         
     }
