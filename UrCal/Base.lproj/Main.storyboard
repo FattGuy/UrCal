@@ -41,6 +41,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="110.5"/>
                                                 <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="Women"/>
+                                                <connections>
+                                                    <action selector="oneOfSixButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mvG-G1-pLB"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEm-RG-Lfk">
                                                 <rect key="frame" x="0.0" y="120" width="150" height="110"/>
@@ -137,7 +140,7 @@
                         <outlet property="woButton" destination="ggI-8X-oHi" id="Cpl-w6-cD4"/>
                         <segue destination="Hhg-iu-BLJ" kind="show" identifier="toSideMenu" id="WvJ-m1-1zi"/>
                         <segue destination="4Q8-KU-9fr" kind="show" identifier="showSearch" id="Yq1-Hx-bGR"/>
-                        <segue destination="49S-wh-7Wd" kind="show" id="fwH-Rc-8XG"/>
+                        <segue destination="49S-wh-7Wd" kind="show" identifier="showIngredient" id="fwH-Rc-8XG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -148,12 +151,12 @@
         <scene sceneID="RvT-Jy-aRI">
             <objects>
                 <tableViewController id="49S-wh-7Wd" customClass="IngredientTableViewController" customModule="UrCal" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="6li-85-mk5">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" id="6li-85-mk5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="IngredientCell" rowHeight="150" id="qh7-Ut-W5i">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="IngredientCell" rowHeight="150" id="qh7-Ut-W5i" customClass="IngredientTableViewCell" customModule="UrCal" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qh7-Ut-W5i" id="KVD-So-tJ4">
@@ -165,18 +168,23 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E59-99-aLb">
                                                     <rect key="frame" x="0.0" y="0.0" width="25" height="26"/>
+                                                    <color key="backgroundColor" red="0.75560349225997925" green="0.94411581754684448" blue="0.80391615629196167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wTY-fl-Ide">
                                                     <rect key="frame" x="0.0" y="27" width="25" height="26"/>
+                                                    <color key="backgroundColor" red="0.75560349225997925" green="0.94411581754684448" blue="0.80391615629196167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="al1-RN-WUS">
                                                     <rect key="frame" x="0.0" y="54" width="25" height="26"/>
+                                                    <color key="backgroundColor" red="0.75560349225997925" green="0.94411581754684448" blue="0.80391615629196167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tq4-NU-5gf">
                                                     <rect key="frame" x="0.0" y="81" width="25" height="26"/>
+                                                    <color key="backgroundColor" red="0.75560349225997925" green="0.94411581754684448" blue="0.80391615629196167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3zO-hH-QhL">
                                                     <rect key="frame" x="0.0" y="108" width="25" height="26"/>
+                                                    <color key="backgroundColor" red="0.75560349225997925" green="0.94411581754684448" blue="0.80391615629196167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -245,6 +253,7 @@
                                         </stackView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oE5-xm-Zfy">
                                             <rect key="frame" x="438" y="10" width="40" height="130"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="40" id="9GU-fT-nbw"/>
                                                 <constraint firstAttribute="height" constant="130" id="Erb-vA-d7n"/>

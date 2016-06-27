@@ -23,6 +23,7 @@
 		F25496861D21B812000493BB /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25496851D21B812000493BB /* SearchTableViewController.swift */; };
 		F25496881D21B81E000493BB /* IngredientTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25496871D21B81E000493BB /* IngredientTableViewController.swift */; };
 		F254968C1D21B8B1000493BB /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F254968B1D21B8B1000493BB /* SearchTableViewCell.swift */; };
+		F254968E1D21C77C000493BB /* IngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F254968D1D21C77C000493BB /* IngredientTableViewCell.swift */; };
 		F28262781D21814C00AB980B /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28262771D21814C00AB980B /* NavViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		F25496851D21B812000493BB /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		F25496871D21B81E000493BB /* IngredientTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientTableViewController.swift; sourceTree = "<group>"; };
 		F254968B1D21B8B1000493BB /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		F254968D1D21C77C000493BB /* IngredientTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientTableViewCell.swift; sourceTree = "<group>"; };
 		F28262771D21814C00AB980B /* NavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -284,6 +286,7 @@
 		F254968A1D21B8A1000493BB /* cell */ = {
 			isa = PBXGroup;
 			children = (
+				F254968D1D21C77C000493BB /* IngredientTableViewCell.swift */,
 			);
 			name = cell;
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 				F28262781D21814C00AB980B /* NavViewController.swift in Sources */,
 				F24EFE621D1C6F6000C59430 /* SideMenuViewController.swift in Sources */,
 				F25496881D21B81E000493BB /* IngredientTableViewController.swift in Sources */,
+				F254968E1D21C77C000493BB /* IngredientTableViewCell.swift in Sources */,
 				F24EFE651D1C6FA700C59430 /* GuillotineMenuTransitionAnimation.swift in Sources */,
 				F25496821D21B62D000493BB /* ProfileViewController.swift in Sources */,
 				F24EFE5F1D1C621300C59430 /* HomeViewController.swift in Sources */,

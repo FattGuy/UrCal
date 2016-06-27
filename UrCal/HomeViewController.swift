@@ -49,6 +49,9 @@ class HomeViewController: UIViewController, UIViewControllerTransitioningDelegat
         self.presentViewController(menuVC, animated: true, completion: nil)
     }
     
+    @IBAction func oneOfSixButtonPressed(sender: UIButton) {
+        self.performSegueWithIdentifier("showIngredient", sender: sender)
+    }
     @IBAction func findButtonPressed(sender: UIButton) {
         self.performSegueWithIdentifier("showSearch", sender: sender)
     }
