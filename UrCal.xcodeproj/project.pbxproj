@@ -17,6 +17,10 @@
 		F24EFE5F1D1C621300C59430 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24EFE5E1D1C621300C59430 /* HomeViewController.swift */; };
 		F24EFE621D1C6F6000C59430 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24EFE611D1C6F6000C59430 /* SideMenuViewController.swift */; };
 		F24EFE651D1C6FA700C59430 /* GuillotineMenuTransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24EFE641D1C6FA700C59430 /* GuillotineMenuTransitionAnimation.swift */; };
+		F254967E1D21B616000493BB /* MyPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F254967D1D21B616000493BB /* MyPlanViewController.swift */; };
+		F25496801D21B622000493BB /* MyStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F254967F1D21B622000493BB /* MyStatsViewController.swift */; };
+		F25496821D21B62D000493BB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25496811D21B62D000493BB /* ProfileViewController.swift */; };
+		F28262781D21814C00AB980B /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28262771D21814C00AB980B /* NavViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		F24EFE5E1D1C621300C59430 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F24EFE611D1C6F6000C59430 /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		F24EFE641D1C6FA700C59430 /* GuillotineMenuTransitionAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuillotineMenuTransitionAnimation.swift; sourceTree = "<group>"; };
+		F254967D1D21B616000493BB /* MyPlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPlanViewController.swift; sourceTree = "<group>"; };
+		F254967F1D21B622000493BB /* MyStatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStatsViewController.swift; sourceTree = "<group>"; };
+		F25496811D21B62D000493BB /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F28262771D21814C00AB980B /* NavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +203,7 @@
 		F24EFE5C1D1C61D800C59430 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F28262761D21813600AB980B /* Nav */,
 				F24EFE601D1C6F3000C59430 /* SideMenu */,
 				F24EFE5D1D1C620200C59430 /* Home */,
 				F24EFE301D1C5FD800C59430 /* Image.xcassets */,
@@ -214,6 +223,7 @@
 		F24EFE601D1C6F3000C59430 /* SideMenu */ = {
 			isa = PBXGroup;
 			children = (
+				F254967C1D21B5D9000493BB /* popOverView */,
 				F24EFE611D1C6F6000C59430 /* SideMenuViewController.swift */,
 			);
 			name = SideMenu;
@@ -225,6 +235,24 @@
 				F24EFE641D1C6FA700C59430 /* GuillotineMenuTransitionAnimation.swift */,
 			);
 			name = exLib;
+			sourceTree = "<group>";
+		};
+		F254967C1D21B5D9000493BB /* popOverView */ = {
+			isa = PBXGroup;
+			children = (
+				F254967D1D21B616000493BB /* MyPlanViewController.swift */,
+				F254967F1D21B622000493BB /* MyStatsViewController.swift */,
+				F25496811D21B62D000493BB /* ProfileViewController.swift */,
+			);
+			name = popOverView;
+			sourceTree = "<group>";
+		};
+		F28262761D21813600AB980B /* Nav */ = {
+			isa = PBXGroup;
+			children = (
+				F28262771D21814C00AB980B /* NavViewController.swift */,
+			);
+			name = Nav;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,8 +438,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F24EFE2A1D1C5FD800C59430 /* AppDelegate.swift in Sources */,
+				F254967E1D21B616000493BB /* MyPlanViewController.swift in Sources */,
+				F25496801D21B622000493BB /* MyStatsViewController.swift in Sources */,
+				F28262781D21814C00AB980B /* NavViewController.swift in Sources */,
 				F24EFE621D1C6F6000C59430 /* SideMenuViewController.swift in Sources */,
 				F24EFE651D1C6FA700C59430 /* GuillotineMenuTransitionAnimation.swift in Sources */,
+				F25496821D21B62D000493BB /* ProfileViewController.swift in Sources */,
 				F24EFE5F1D1C621300C59430 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

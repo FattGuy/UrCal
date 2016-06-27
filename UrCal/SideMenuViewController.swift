@@ -9,16 +9,11 @@
 import UIKit
 
 class SideMenuViewController: UIViewController, GuillotineMenu, GuillotineAnimationDelegate, UIPopoverPresentationControllerDelegate {
-
-    @IBOutlet weak var myplanImage: UIImageView!
-    @IBOutlet weak var mystatsImage: UIImageView!
-    @IBOutlet weak var profileImage: UIImageView!
+    
+    var dismissButton: UIButton!
     @IBOutlet weak var myplanButton: UIButton!
     @IBOutlet weak var mystatsButton: UIButton!
     @IBOutlet weak var profileButton: UIButton!
-    
-    
-    var dismissButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,14 +33,54 @@ class SideMenuViewController: UIViewController, GuillotineMenu, GuillotineAnimat
         self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
 
-    /*
+    @IBAction func toPopOverView(sender: UIButton) {
+        switch sender {
+        case myplanButton:
+            self.performSegueWithIdentifier("showMyPlan", sender: myplanButton)
+            
+        case mystatsButton:
+            self.performSegueWithIdentifier("showMyStats", sender: mystatsButton)
+            
+        case profileButton:
+            self.performSegueWithIdentifier("showProfile", sender: profileButton)
+            
+        default:
+            print("no this button")
+        }
+    }
+    
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "showMyPlan" {
+            let vc = segue.destinationViewController as UIViewController
+            let controller = vc.popoverPresentationController
+            
+            if controller != nil {
+                controller?.delegate = self
+            }
+        } else if segue.identifier == "showMyStats" {
+            let vc = segue.destinationViewController as UIViewController
+            let controller = vc.popoverPresentationController
+            
+            if controller != nil {
+                controller?.delegate = self
+            }
+        } else if segue.identifier == "showProfile" {
+            let vc = segue.destinationViewController as UIViewController
+            let controller = vc.popoverPresentationController
+            
+            if controller != nil {
+                controller?.delegate = self
+            }
+        }
     }
-    */
-
+    
+    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .None
+    }
 }

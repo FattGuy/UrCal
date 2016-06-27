@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
@@ -140,7 +139,27 @@
             </objects>
             <point key="canvasLocation" x="1066" y="1078"/>
         </scene>
-        <!--Side Menu View Controller-->
+        <!--My Plan View Controller-->
+        <scene sceneID="xIn-8s-Z0g">
+            <objects>
+                <viewController id="suM-jg-9vB" customClass="MyPlanViewController" customModule="UrCal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4PH-Gx-MDM"/>
+                        <viewControllerLayoutGuide type="bottom" id="bde-wc-V4J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KxM-8q-63q">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="200" height="300"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zvr-Em-YD3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2292" y="529"/>
+        </scene>
+        <!--Title-->
         <scene sceneID="EBU-RD-fNa">
             <objects>
                 <viewController storyboardIdentifier="SideMenuViewController" id="Hhg-iu-BLJ" customClass="SideMenuViewController" customModule="UrCal" customModuleProvider="target" sceneMemberID="viewController">
@@ -152,79 +171,149 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QcF-kJ-SAA">
-                                <rect key="frame" x="108" y="268" width="70" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="Vcf-dc-1qW"/>
-                                    <constraint firstAttribute="height" constant="70" id="dZi-Ll-oWa"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="APy-lx-MTC">
-                                <rect key="frame" x="108" y="368" width="70" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="0zX-iy-3XD"/>
-                                    <constraint firstAttribute="width" constant="70" id="uu0-5B-eCj"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhC-rU-9bc">
-                                <rect key="frame" x="213" y="182" width="167" height="30"/>
+                                <rect key="frame" x="327" y="182" width="51" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="MyPlan"/>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X1k-kB-qfG">
-                                <rect key="frame" x="108" y="162" width="70" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="A7F-iV-kI9"/>
-                                    <constraint firstAttribute="height" constant="70" id="DRg-81-UMw"/>
+                                    <constraint firstAttribute="width" constant="51" id="7sX-Aq-9LV"/>
                                 </constraints>
-                            </imageView>
+                                <state key="normal" title="MyPlan"/>
+                                <connections>
+                                    <action selector="toPopOverView:" destination="Hhg-iu-BLJ" eventType="touchUpInside" id="Mqp-dU-jWU"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T78-io-Dmr">
-                                <rect key="frame" x="213" y="288" width="167" height="30"/>
+                                <rect key="frame" x="324" y="288" width="57" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="57" id="mSG-zy-OSc"/>
+                                </constraints>
                                 <state key="normal" title="MyStats"/>
+                                <connections>
+                                    <action selector="toPopOverView:" destination="Hhg-iu-BLJ" eventType="touchUpInside" id="Xfg-xg-Kkz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKM-pg-LO8">
-                                <rect key="frame" x="213" y="388" width="167" height="30"/>
+                                <rect key="frame" x="330.5" y="388" width="44" height="30"/>
                                 <color key="backgroundColor" red="0.1176470588" green="0.67450980390000004" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="z6X-gF-FFH"/>
+                                </constraints>
                                 <state key="normal" title="Profile"/>
+                                <connections>
+                                    <action selector="toPopOverView:" destination="Hhg-iu-BLJ" eventType="touchUpInside" id="Ao5-c9-Rvf"/>
+                                </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="APy-lx-MTC">
+                                <rect key="frame" x="164" y="368" width="70" height="70"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="gO2-e9-Hnz"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QcF-kJ-SAA">
+                                <rect key="frame" x="164" y="268" width="70" height="70"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Eqj-vM-0E8"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X1k-kB-qfG">
+                                <rect key="frame" x="164" y="162" width="70" height="70"/>
+                                <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="ISh-tQ-IIc"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="QcF-kJ-SAA" firstAttribute="top" secondItem="X1k-kB-qfG" secondAttribute="bottom" constant="36" id="01h-YH-3Sk"/>
-                            <constraint firstItem="APy-lx-MTC" firstAttribute="leading" secondItem="0N7-uZ-qge" secondAttribute="leadingMargin" constant="88" id="0bQ-zg-NOY"/>
-                            <constraint firstItem="CKM-pg-LO8" firstAttribute="top" secondItem="T78-io-Dmr" secondAttribute="bottom" constant="70" id="6PA-Dj-Zzt"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="CKM-pg-LO8" secondAttribute="trailing" constant="200" id="Flj-Jq-nFC"/>
-                            <constraint firstItem="T78-io-Dmr" firstAttribute="leading" secondItem="QcF-kJ-SAA" secondAttribute="trailing" constant="35" id="InF-s4-V55"/>
-                            <constraint firstItem="5ud-vi-48X" firstAttribute="top" secondItem="APy-lx-MTC" secondAttribute="bottom" constant="162" id="LGu-g5-EYM"/>
-                            <constraint firstItem="APy-lx-MTC" firstAttribute="top" secondItem="QcF-kJ-SAA" secondAttribute="bottom" constant="30" id="OcC-2w-XvN"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="T78-io-Dmr" secondAttribute="trailing" constant="200" id="PLC-Kg-Se4"/>
-                            <constraint firstItem="T78-io-Dmr" firstAttribute="top" secondItem="IhC-rU-9bc" secondAttribute="bottom" constant="76" id="QP0-wd-x7z"/>
-                            <constraint firstItem="5ud-vi-48X" firstAttribute="top" secondItem="CKM-pg-LO8" secondAttribute="bottom" constant="182" id="XQM-Qy-T3v"/>
-                            <constraint firstItem="QcF-kJ-SAA" firstAttribute="leading" secondItem="0N7-uZ-qge" secondAttribute="leadingMargin" constant="88" id="eBN-nJ-pg4"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="IhC-rU-9bc" secondAttribute="trailing" constant="200" id="i5a-dS-YGU"/>
-                            <constraint firstItem="IhC-rU-9bc" firstAttribute="leading" secondItem="X1k-kB-qfG" secondAttribute="trailing" constant="35" id="q9A-Gi-BZE"/>
-                            <constraint firstItem="X1k-kB-qfG" firstAttribute="leading" secondItem="0N7-uZ-qge" secondAttribute="leadingMargin" constant="88" id="wHG-Rr-gZa"/>
-                            <constraint firstItem="CKM-pg-LO8" firstAttribute="leading" secondItem="APy-lx-MTC" secondAttribute="trailing" constant="35" id="wfc-Vc-Qdg"/>
+                            <constraint firstItem="T78-io-Dmr" firstAttribute="height" secondItem="IhC-rU-9bc" secondAttribute="height" id="21Y-YG-dos"/>
+                            <constraint firstItem="5ud-vi-48X" firstAttribute="top" secondItem="CKM-pg-LO8" secondAttribute="bottom" constant="182" id="4Sv-Ot-ymT"/>
+                            <constraint firstItem="IhC-rU-9bc" firstAttribute="top" secondItem="VpK-nj-J8H" secondAttribute="bottom" constant="118" id="8yZ-iI-bOh"/>
+                            <constraint firstItem="5ud-vi-48X" firstAttribute="top" secondItem="APy-lx-MTC" secondAttribute="bottom" constant="162" id="BR9-kp-hW9"/>
+                            <constraint firstItem="CKM-pg-LO8" firstAttribute="top" secondItem="T78-io-Dmr" secondAttribute="bottom" constant="70" id="GeB-M5-Vcl"/>
+                            <constraint firstItem="APy-lx-MTC" firstAttribute="centerX" secondItem="0N7-uZ-qge" secondAttribute="centerX" constant="-101" id="JE6-ql-j0Z"/>
+                            <constraint firstItem="CKM-pg-LO8" firstAttribute="height" secondItem="IhC-rU-9bc" secondAttribute="height" id="NqF-Jh-yqg"/>
+                            <constraint firstItem="QcF-kJ-SAA" firstAttribute="centerX" secondItem="0N7-uZ-qge" secondAttribute="centerX" constant="-101" id="Xd4-XV-LcN"/>
+                            <constraint firstItem="X1k-kB-qfG" firstAttribute="centerX" secondItem="0N7-uZ-qge" secondAttribute="centerX" constant="-101" id="ZRb-wy-PCw"/>
+                            <constraint firstItem="APy-lx-MTC" firstAttribute="top" secondItem="QcF-kJ-SAA" secondAttribute="bottom" constant="30" id="c7B-Dn-1tq"/>
+                            <constraint firstItem="QcF-kJ-SAA" firstAttribute="height" secondItem="X1k-kB-qfG" secondAttribute="height" id="fVq-g9-oQd"/>
+                            <constraint firstItem="APy-lx-MTC" firstAttribute="height" secondItem="X1k-kB-qfG" secondAttribute="height" id="fWd-e5-18R"/>
+                            <constraint firstItem="T78-io-Dmr" firstAttribute="top" secondItem="IhC-rU-9bc" secondAttribute="bottom" constant="76" id="fwP-eV-Mll"/>
+                            <constraint firstItem="CKM-pg-LO8" firstAttribute="centerX" secondItem="0N7-uZ-qge" secondAttribute="centerX" constant="52.5" id="upw-Gn-iez"/>
+                            <constraint firstItem="T78-io-Dmr" firstAttribute="centerX" secondItem="0N7-uZ-qge" secondAttribute="centerX" constant="52.5" id="v1f-DS-9S5"/>
+                            <constraint firstItem="QcF-kJ-SAA" firstAttribute="top" secondItem="X1k-kB-qfG" secondAttribute="bottom" constant="36" id="x8q-Cv-0uf"/>
+                            <constraint firstItem="IhC-rU-9bc" firstAttribute="centerX" secondItem="0N7-uZ-qge" secondAttribute="centerX" constant="52.5" id="ysa-2a-ZOK"/>
+                            <constraint firstItem="X1k-kB-qfG" firstAttribute="top" secondItem="VpK-nj-J8H" secondAttribute="bottom" constant="98" id="zt2-dW-wGf"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="iV5-kp-ZFu">
+                        <barButtonItem key="leftBarButtonItem" id="Qk0-gY-Kgl"/>
+                    </navigationItem>
                     <connections>
-                        <outlet property="myplanButton" destination="IhC-rU-9bc" id="eoc-lj-at4"/>
-                        <outlet property="myplanImage" destination="X1k-kB-qfG" id="WWN-1m-xBT"/>
-                        <outlet property="mystatsButton" destination="T78-io-Dmr" id="vlO-e4-l0J"/>
-                        <outlet property="mystatsImage" destination="QcF-kJ-SAA" id="wdb-96-p73"/>
-                        <outlet property="profileButton" destination="CKM-pg-LO8" id="gsm-7J-RQm"/>
-                        <outlet property="profileImage" destination="APy-lx-MTC" id="vlk-ec-c7U"/>
+                        <outlet property="myplanButton" destination="IhC-rU-9bc" id="fXJ-dz-ebj"/>
+                        <outlet property="mystatsButton" destination="T78-io-Dmr" id="mTv-ix-mAm"/>
+                        <outlet property="profileButton" destination="CKM-pg-LO8" id="frC-fT-1Pt"/>
+                        <segue destination="oP9-Fi-Ka5" kind="popoverPresentation" identifier="showMyStats" popoverAnchorView="T78-io-Dmr" id="16K-cX-s8X">
+                            <popoverArrowDirection key="popoverArrowDirection" down="YES"/>
+                        </segue>
+                        <segue destination="pda-Gf-pcW" kind="popoverPresentation" identifier="showProfile" popoverAnchorView="CKM-pg-LO8" id="vtT-oG-gT4">
+                            <popoverArrowDirection key="popoverArrowDirection" down="YES"/>
+                        </segue>
+                        <segue destination="suM-jg-9vB" kind="popoverPresentation" identifier="showMyPlan" popoverAnchorView="IhC-rU-9bc" id="AuR-Ra-sjg">
+                            <popoverArrowDirection key="popoverArrowDirection" down="YES"/>
+                        </segue>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OC0-EV-GcL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1712" y="1078"/>
+            <point key="canvasLocation" x="1747" y="1078"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--My Stats View Controller-->
+        <scene sceneID="mnR-1X-ojy">
+            <objects>
+                <viewController id="oP9-Fi-Ka5" customClass="MyStatsViewController" customModule="UrCal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AxI-VI-nz9"/>
+                        <viewControllerLayoutGuide type="bottom" id="B8X-oI-ctI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QKc-L8-fEn">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="200" height="300"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="auU-xv-UaX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2292" y="945"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="W35-Sm-sAW">
+            <objects>
+                <viewController id="pda-Gf-pcW" customClass="ProfileViewController" customModule="UrCal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="huv-SV-XrS"/>
+                        <viewControllerLayoutGuide type="bottom" id="B3k-6d-vgs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Ry-Ch-f7y">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="200" height="300"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kM5-Q5-TZ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2292" y="1385"/>
+        </scene>
+        <!--Nav View Controller-->
         <scene sceneID="SMH-Af-gz1">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qxj-yI-aH8" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qxj-yI-aH8" customClass="NavViewController" customModule="UrCal" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uLa-u3-HXF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

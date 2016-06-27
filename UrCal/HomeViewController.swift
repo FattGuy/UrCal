@@ -37,16 +37,6 @@ class HomeViewController: UIViewController, UIViewControllerTransitioningDelegat
     }
 
     @IBAction func showSideMenu(sender: UIButton) {
-        self.performSegueWithIdentifier("toSideMenu", sender: self)
-    }
-    
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-        
         let menuVC = storyboard!.instantiateViewControllerWithIdentifier("SideMenuViewController")
         menuVC.modalPresentationStyle = .Custom
         menuVC.transitioningDelegate = self
@@ -57,6 +47,16 @@ class HomeViewController: UIViewController, UIViewControllerTransitioningDelegat
         presentationAnimator.presentButton = self.menuButton
         presentationAnimator.duration = 0.6
         self.presentViewController(menuVC, animated: true, completion: nil)
+    }
+    
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        
+        
     }
 
     func disNavAppear() {
