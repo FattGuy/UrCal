@@ -27,6 +27,18 @@
 		F25496881D21B81E000493BB /* IngredientTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25496871D21B81E000493BB /* IngredientTableViewController.swift */; };
 		F254968C1D21B8B1000493BB /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F254968B1D21B8B1000493BB /* SearchTableViewCell.swift */; };
 		F254968E1D21C77C000493BB /* IngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F254968D1D21C77C000493BB /* IngredientTableViewCell.swift */; };
+		F2E763BD1D2317740008108E /* Carb+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E763B11D2317740008108E /* Carb+CoreDataProperties.swift */; };
+		F2E763BE1D2317740008108E /* Carb.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E763B21D2317740008108E /* Carb.swift */; };
+		F2E763BF1D2317740008108E /* Snack+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E763B31D2317740008108E /* Snack+CoreDataProperties.swift */; };
+		F2E763C01D2317740008108E /* Snack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E763B41D2317740008108E /* Snack.swift */; };
+		F2E763C11D2317740008108E /* FoodPlan+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E763B51D2317740008108E /* FoodPlan+CoreDataProperties.swift */; };
+		F2E763C21D2317740008108E /* FoodPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E763B61D2317740008108E /* FoodPlan.swift */; };
+		F2E763C31D2317740008108E /* Supp+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E763B71D2317740008108E /* Supp+CoreDataProperties.swift */; };
+		F2E763C41D2317740008108E /* Supp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E763B81D2317740008108E /* Supp.swift */; };
+		F2E763C51D2317740008108E /* Vege+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E763B91D2317740008108E /* Vege+CoreDataProperties.swift */; };
+		F2E763C61D2317740008108E /* Vege.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E763BA1D2317740008108E /* Vege.swift */; };
+		F2E763C71D2317740008108E /* Meat+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E763BB1D2317740008108E /* Meat+CoreDataProperties.swift */; };
+		F2E763C81D2317740008108E /* Meat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E763BC1D2317740008108E /* Meat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +87,18 @@
 		F25496871D21B81E000493BB /* IngredientTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientTableViewController.swift; sourceTree = "<group>"; };
 		F254968B1D21B8B1000493BB /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		F254968D1D21C77C000493BB /* IngredientTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientTableViewCell.swift; sourceTree = "<group>"; };
+		F2E763B11D2317740008108E /* Carb+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Carb+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F2E763B21D2317740008108E /* Carb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Carb.swift; sourceTree = "<group>"; };
+		F2E763B31D2317740008108E /* Snack+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Snack+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F2E763B41D2317740008108E /* Snack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snack.swift; sourceTree = "<group>"; };
+		F2E763B51D2317740008108E /* FoodPlan+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FoodPlan+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F2E763B61D2317740008108E /* FoodPlan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodPlan.swift; sourceTree = "<group>"; };
+		F2E763B71D2317740008108E /* Supp+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Supp+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F2E763B81D2317740008108E /* Supp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Supp.swift; sourceTree = "<group>"; };
+		F2E763B91D2317740008108E /* Vege+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Vege+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F2E763BA1D2317740008108E /* Vege.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vege.swift; sourceTree = "<group>"; };
+		F2E763BB1D2317740008108E /* Meat+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Meat+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F2E763BC1D2317740008108E /* Meat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +151,18 @@
 			children = (
 				F23B19C81D22FF4200147190 /* UrCalData.xcdatamodeld */,
 				F23B19CD1D23009000147190 /* DataController.swift */,
+				F2E763B11D2317740008108E /* Carb+CoreDataProperties.swift */,
+				F2E763B21D2317740008108E /* Carb.swift */,
+				F2E763B31D2317740008108E /* Snack+CoreDataProperties.swift */,
+				F2E763B41D2317740008108E /* Snack.swift */,
+				F2E763B51D2317740008108E /* FoodPlan+CoreDataProperties.swift */,
+				F2E763B61D2317740008108E /* FoodPlan.swift */,
+				F2E763B71D2317740008108E /* Supp+CoreDataProperties.swift */,
+				F2E763B81D2317740008108E /* Supp.swift */,
+				F2E763B91D2317740008108E /* Vege+CoreDataProperties.swift */,
+				F2E763BA1D2317740008108E /* Vege.swift */,
+				F2E763BB1D2317740008108E /* Meat+CoreDataProperties.swift */,
+				F2E763BC1D2317740008108E /* Meat.swift */,
 			);
 			name = DB;
 			sourceTree = "<group>";
@@ -500,15 +536,27 @@
 				F25496861D21B812000493BB /* SearchTableViewController.swift in Sources */,
 				F254967E1D21B616000493BB /* MyPlanViewController.swift in Sources */,
 				F23B19CA1D22FF4200147190 /* UrCalData.xcdatamodeld in Sources */,
+				F2E763BF1D2317740008108E /* Snack+CoreDataProperties.swift in Sources */,
+				F2E763C81D2317740008108E /* Meat.swift in Sources */,
 				F25496801D21B622000493BB /* MyStatsViewController.swift in Sources */,
+				F2E763C11D2317740008108E /* FoodPlan+CoreDataProperties.swift in Sources */,
+				F2E763C61D2317740008108E /* Vege.swift in Sources */,
+				F2E763BD1D2317740008108E /* Carb+CoreDataProperties.swift in Sources */,
+				F2E763C51D2317740008108E /* Vege+CoreDataProperties.swift in Sources */,
+				F2E763C01D2317740008108E /* Snack.swift in Sources */,
+				F2E763C41D2317740008108E /* Supp.swift in Sources */,
 				F254968C1D21B8B1000493BB /* SearchTableViewCell.swift in Sources */,
+				F2E763BE1D2317740008108E /* Carb.swift in Sources */,
 				F24EFE621D1C6F6000C59430 /* SideMenuViewController.swift in Sources */,
 				F25496881D21B81E000493BB /* IngredientTableViewController.swift in Sources */,
 				F254968E1D21C77C000493BB /* IngredientTableViewCell.swift in Sources */,
 				F24EFE651D1C6FA700C59430 /* GuillotineMenuTransitionAnimation.swift in Sources */,
+				F2E763C71D2317740008108E /* Meat+CoreDataProperties.swift in Sources */,
 				F25496821D21B62D000493BB /* ProfileViewController.swift in Sources */,
 				F23B19CE1D23009000147190 /* DataController.swift in Sources */,
 				F24EFE5F1D1C621300C59430 /* HomeViewController.swift in Sources */,
+				F2E763C21D2317740008108E /* FoodPlan.swift in Sources */,
+				F2E763C31D2317740008108E /* Supp+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
