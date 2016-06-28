@@ -136,6 +136,7 @@
                         <outlet property="findbutton" destination="koI-Rp-DGE" id="naQ-QQ-iJI"/>
                         <outlet property="intButton" destination="tM8-cO-12I" id="mqY-Bl-tKA"/>
                         <outlet property="mButton" destination="fzy-Kh-cHG" id="EgA-lH-UNQ"/>
+                        <outlet property="menuButton" destination="fkS-su-qI4" id="9x9-ZW-8Yg"/>
                         <outlet property="tranButton" destination="0vo-7j-rgo" id="NIz-Jl-n1P"/>
                         <outlet property="woButton" destination="ggI-8X-oHi" id="Cpl-w6-cD4"/>
                         <segue destination="Hhg-iu-BLJ" kind="show" identifier="toSideMenu" id="WvJ-m1-1zi"/>
@@ -416,98 +417,103 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhC-rU-9bc">
-                                <rect key="frame" x="327" y="182" width="51" height="30"/>
-                                <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="51" id="7sX-Aq-9LV"/>
-                                </constraints>
-                                <state key="normal" title="MyPlan"/>
-                                <connections>
-                                    <action selector="toPopOverView:" destination="Hhg-iu-BLJ" eventType="touchUpInside" id="Mqp-dU-jWU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T78-io-Dmr">
-                                <rect key="frame" x="324" y="288" width="57" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="57" id="mSG-zy-OSc"/>
-                                </constraints>
-                                <state key="normal" title="MyStats"/>
-                                <connections>
-                                    <action selector="toPopOverView:" destination="Hhg-iu-BLJ" eventType="touchUpInside" id="Xfg-xg-Kkz"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKM-pg-LO8">
-                                <rect key="frame" x="330.5" y="388" width="44" height="30"/>
-                                <color key="backgroundColor" red="0.1176470588" green="0.67450980390000004" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="44" id="z6X-gF-FFH"/>
-                                </constraints>
-                                <state key="normal" title="Profile"/>
-                                <connections>
-                                    <action selector="toPopOverView:" destination="Hhg-iu-BLJ" eventType="touchUpInside" id="Ao5-c9-Rvf"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="APy-lx-MTC">
-                                <rect key="frame" x="164" y="368" width="70" height="70"/>
-                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="gO2-e9-Hnz"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QcF-kJ-SAA">
-                                <rect key="frame" x="164" y="268" width="70" height="70"/>
-                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="Eqj-vM-0E8"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X1k-kB-qfG">
-                                <rect key="frame" x="164" y="162" width="70" height="70"/>
-                                <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="ISh-tQ-IIc"/>
-                                </constraints>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="F83-ai-HxR">
+                                <rect key="frame" x="227" y="155" width="147" height="290"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="MLE-Dn-NBR">
+                                        <rect key="frame" x="0.0" y="0.0" width="147" height="70"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X1k-kB-qfG">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                                <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="SlC-Rj-Oar"/>
+                                                    <constraint firstAttribute="width" constant="70" id="kqU-bV-eVS"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhC-rU-9bc">
+                                                <rect key="frame" x="90" y="27" width="57" height="17"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="17" id="zO6-Rp-pXE"/>
+                                                </constraints>
+                                                <state key="normal" title="MyPlan"/>
+                                                <connections>
+                                                    <action selector="toPopOverView:" destination="Hhg-iu-BLJ" eventType="touchUpInside" id="Mqp-dU-jWU"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DpJ-nE-Hpl">
+                                        <rect key="frame" x="0.0" y="110" width="147" height="70"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QcF-kJ-SAA">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="VlG-mY-npO"/>
+                                                    <constraint firstAttribute="width" constant="70" id="v7Q-dG-E87"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T78-io-Dmr">
+                                                <rect key="frame" x="90" y="27" width="57" height="17"/>
+                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="17" id="Ql3-eG-AMc"/>
+                                                </constraints>
+                                                <state key="normal" title="MyStats"/>
+                                                <connections>
+                                                    <action selector="toPopOverView:" destination="Hhg-iu-BLJ" eventType="touchUpInside" id="Xfg-xg-Kkz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OK3-QM-98o">
+                                        <rect key="frame" x="0.0" y="220" width="147" height="70"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="APy-lx-MTC">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="70" id="C6L-Sk-J8X"/>
+                                                    <constraint firstAttribute="height" constant="70" id="qOT-i8-caN"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKM-pg-LO8">
+                                                <rect key="frame" x="90" y="27" width="57" height="17"/>
+                                                <color key="backgroundColor" red="0.1176470588" green="0.67450980390000004" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="17" id="wyj-RF-fca"/>
+                                                </constraints>
+                                                <state key="normal" title="Profile"/>
+                                                <connections>
+                                                    <action selector="toPopOverView:" destination="Hhg-iu-BLJ" eventType="touchUpInside" id="Ao5-c9-Rvf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="T78-io-Dmr" firstAttribute="height" secondItem="IhC-rU-9bc" secondAttribute="height" id="21Y-YG-dos"/>
-                            <constraint firstItem="5ud-vi-48X" firstAttribute="top" secondItem="CKM-pg-LO8" secondAttribute="bottom" constant="182" id="4Sv-Ot-ymT"/>
-                            <constraint firstItem="IhC-rU-9bc" firstAttribute="top" secondItem="VpK-nj-J8H" secondAttribute="bottom" constant="118" id="8yZ-iI-bOh"/>
-                            <constraint firstItem="5ud-vi-48X" firstAttribute="top" secondItem="APy-lx-MTC" secondAttribute="bottom" constant="162" id="BR9-kp-hW9"/>
-                            <constraint firstItem="CKM-pg-LO8" firstAttribute="top" secondItem="T78-io-Dmr" secondAttribute="bottom" constant="70" id="GeB-M5-Vcl"/>
-                            <constraint firstItem="APy-lx-MTC" firstAttribute="centerX" secondItem="0N7-uZ-qge" secondAttribute="centerX" constant="-101" id="JE6-ql-j0Z"/>
-                            <constraint firstItem="CKM-pg-LO8" firstAttribute="height" secondItem="IhC-rU-9bc" secondAttribute="height" id="NqF-Jh-yqg"/>
-                            <constraint firstItem="QcF-kJ-SAA" firstAttribute="centerX" secondItem="0N7-uZ-qge" secondAttribute="centerX" constant="-101" id="Xd4-XV-LcN"/>
-                            <constraint firstItem="X1k-kB-qfG" firstAttribute="centerX" secondItem="0N7-uZ-qge" secondAttribute="centerX" constant="-101" id="ZRb-wy-PCw"/>
-                            <constraint firstItem="APy-lx-MTC" firstAttribute="top" secondItem="QcF-kJ-SAA" secondAttribute="bottom" constant="30" id="c7B-Dn-1tq"/>
-                            <constraint firstItem="QcF-kJ-SAA" firstAttribute="height" secondItem="X1k-kB-qfG" secondAttribute="height" id="fVq-g9-oQd"/>
-                            <constraint firstItem="APy-lx-MTC" firstAttribute="height" secondItem="X1k-kB-qfG" secondAttribute="height" id="fWd-e5-18R"/>
-                            <constraint firstItem="T78-io-Dmr" firstAttribute="top" secondItem="IhC-rU-9bc" secondAttribute="bottom" constant="76" id="fwP-eV-Mll"/>
-                            <constraint firstItem="CKM-pg-LO8" firstAttribute="centerX" secondItem="0N7-uZ-qge" secondAttribute="centerX" constant="52.5" id="upw-Gn-iez"/>
-                            <constraint firstItem="T78-io-Dmr" firstAttribute="centerX" secondItem="0N7-uZ-qge" secondAttribute="centerX" constant="52.5" id="v1f-DS-9S5"/>
-                            <constraint firstItem="QcF-kJ-SAA" firstAttribute="top" secondItem="X1k-kB-qfG" secondAttribute="bottom" constant="36" id="x8q-Cv-0uf"/>
-                            <constraint firstItem="IhC-rU-9bc" firstAttribute="centerX" secondItem="0N7-uZ-qge" secondAttribute="centerX" constant="52.5" id="ysa-2a-ZOK"/>
-                            <constraint firstItem="X1k-kB-qfG" firstAttribute="top" secondItem="VpK-nj-J8H" secondAttribute="bottom" constant="98" id="zt2-dW-wGf"/>
+                            <constraint firstItem="F83-ai-HxR" firstAttribute="centerX" secondItem="0N7-uZ-qge" secondAttribute="centerX" id="UJn-Th-Qvw"/>
+                            <constraint firstItem="F83-ai-HxR" firstAttribute="centerY" secondItem="0N7-uZ-qge" secondAttribute="centerY" id="rR9-ks-Zdv"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="iV5-kp-ZFu">
-                        <barButtonItem key="leftBarButtonItem" id="Qk0-gY-Kgl"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Title" id="iV5-kp-ZFu"/>
                     <connections>
                         <outlet property="myplanButton" destination="IhC-rU-9bc" id="fXJ-dz-ebj"/>
                         <outlet property="mystatsButton" destination="T78-io-Dmr" id="mTv-ix-mAm"/>
                         <outlet property="profileButton" destination="CKM-pg-LO8" id="frC-fT-1Pt"/>
                         <segue destination="oP9-Fi-Ka5" kind="popoverPresentation" identifier="showMyStats" popoverAnchorView="T78-io-Dmr" id="16K-cX-s8X">
-                            <popoverArrowDirection key="popoverArrowDirection" down="YES"/>
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                         </segue>
                         <segue destination="pda-Gf-pcW" kind="popoverPresentation" identifier="showProfile" popoverAnchorView="CKM-pg-LO8" id="vtT-oG-gT4">
-                            <popoverArrowDirection key="popoverArrowDirection" down="YES"/>
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                         </segue>
                         <segue destination="suM-jg-9vB" kind="popoverPresentation" identifier="showMyPlan" popoverAnchorView="IhC-rU-9bc" id="AuR-Ra-sjg">
-                            <popoverArrowDirection key="popoverArrowDirection" down="YES"/>
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                         </segue>
                     </connections>
                 </viewController>
@@ -555,12 +561,12 @@
             </objects>
             <point key="canvasLocation" x="2292" y="1385"/>
         </scene>
-        <!--Nav View Controller-->
+        <!--Navigation Controller-->
         <scene sceneID="SMH-Af-gz1">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qxj-yI-aH8" customClass="NavViewController" customModule="UrCal" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qxj-yI-aH8" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uLa-u3-HXF">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="home_menu_bar_button" id="uLa-u3-HXF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

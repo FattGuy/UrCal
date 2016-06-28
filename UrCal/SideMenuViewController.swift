@@ -10,6 +10,7 @@ import UIKit
 
 class SideMenuViewController: UIViewController, GuillotineMenu, GuillotineAnimationDelegate, UIPopoverPresentationControllerDelegate {
     
+
     var dismissButton: UIButton!
     @IBOutlet weak var myplanButton: UIButton!
     @IBOutlet weak var mystatsButton: UIButton!
@@ -22,6 +23,8 @@ class SideMenuViewController: UIViewController, GuillotineMenu, GuillotineAnimat
         dismissButton = UIButton(frame: CGRectZero)
         dismissButton.setImage(UIImage(named: "home_menu_bar_button"), forState: .Normal)
         dismissButton.addTarget(self, action: #selector(dismissButtonTapped(_:)), forControlEvents: .TouchUpInside)
+        //self.navigationItem.leftBarButtonItem?.buttonGroup = dismissButton
+        
     }
 
     override func didReceiveMemoryWarning() {
