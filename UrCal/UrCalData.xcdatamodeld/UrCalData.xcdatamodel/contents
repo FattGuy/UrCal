@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Xcode 7.0">
+    <entity name="Carb" syncable="YES">
+        <attribute name="calorie" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="FoodPlan" syncable="YES">
+        <attribute name="carb_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="meat_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="snack_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="supp_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="total_calorie" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="vege_name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Meat" syncable="YES">
+        <attribute name="calorie" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Snack" syncable="YES">
+        <attribute name="calorie" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Supp" syncable="YES">
+        <attribute name="calorie" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Vege" syncable="YES">
+        <attribute name="calorie" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Meat" positionX="13480" positionY="-2223" width="128" height="73"/>
+        <element name="FoodPlan" positionX="13581" positionY="-2403" width="128" height="133"/>
+        <element name="Vege" positionX="13696" positionY="-2226" width="128" height="75"/>
+        <element name="Snack" positionX="13581" positionY="-2532" width="128" height="75"/>
+        <element name="Carb" positionX="13383" positionY="-2368" width="128" height="73"/>
+        <element name="Supp" positionX="13777" positionY="-2370" width="128" height="75"/>
+    </elements>
+</model>

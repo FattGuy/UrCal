@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		638B5444963E37BA04DC98C5 /* Pods_UrCal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED3BE28AED83044C0883C0B /* Pods_UrCal.framework */; };
+		F23B19CA1D22FF4200147190 /* UrCalData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F23B19C81D22FF4200147190 /* UrCalData.xcdatamodeld */; };
+		F23B19CC1D23004100147190 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23B19CB1D23004100147190 /* CoreData.framework */; };
+		F23B19CE1D23009000147190 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23B19CD1D23009000147190 /* DataController.swift */; };
 		F24EFE2A1D1C5FD800C59430 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24EFE291D1C5FD800C59430 /* AppDelegate.swift */; };
 		F24EFE2F1D1C5FD800C59430 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F24EFE2D1D1C5FD800C59430 /* Main.storyboard */; };
 		F24EFE311D1C5FD800C59430 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F24EFE301D1C5FD800C59430 /* Image.xcassets */; };
@@ -47,6 +50,9 @@
 		19F8C8F0CEE13D92B39FD8F5 /* Pods-UrCal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrCal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UrCal/Pods-UrCal.debug.xcconfig"; sourceTree = "<group>"; };
 		4BA62835F34FC2D1A924E516 /* Pods-UrCal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrCal.release.xcconfig"; path = "Pods/Target Support Files/Pods-UrCal/Pods-UrCal.release.xcconfig"; sourceTree = "<group>"; };
 		CED3BE28AED83044C0883C0B /* Pods_UrCal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UrCal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F23B19C91D22FF4200147190 /* UrCalData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UrCalData.xcdatamodel; sourceTree = "<group>"; };
+		F23B19CB1D23004100147190 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F23B19CD1D23009000147190 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		F24EFE261D1C5FD800C59430 /* UrCal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrCal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F24EFE291D1C5FD800C59430 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F24EFE2E1D1C5FD800C59430 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -76,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F23B19CC1D23004100147190 /* CoreData.framework in Frameworks */,
 				638B5444963E37BA04DC98C5 /* Pods_UrCal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +107,7 @@
 		714DCBF41B50ECC60BE46C49 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F23B19CB1D23004100147190 /* CoreData.framework */,
 				CED3BE28AED83044C0883C0B /* Pods_UrCal.framework */,
 			);
 			name = Frameworks;
@@ -112,6 +120,15 @@
 				4BA62835F34FC2D1A924E516 /* Pods-UrCal.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F23B19C71D22FF0000147190 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				F23B19C81D22FF4200147190 /* UrCalData.xcdatamodeld */,
+				F23B19CD1D23009000147190 /* DataController.swift */,
+			);
+			name = DB;
 			sourceTree = "<group>";
 		};
 		F24EFE1D1D1C5FD800C59430 = {
@@ -188,6 +205,7 @@
 		F24EFE591D1C610300C59430 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F23B19C71D22FF0000147190 /* DB */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -481,6 +499,7 @@
 				F24EFE2A1D1C5FD800C59430 /* AppDelegate.swift in Sources */,
 				F25496861D21B812000493BB /* SearchTableViewController.swift in Sources */,
 				F254967E1D21B616000493BB /* MyPlanViewController.swift in Sources */,
+				F23B19CA1D22FF4200147190 /* UrCalData.xcdatamodeld in Sources */,
 				F25496801D21B622000493BB /* MyStatsViewController.swift in Sources */,
 				F254968C1D21B8B1000493BB /* SearchTableViewCell.swift in Sources */,
 				F24EFE621D1C6F6000C59430 /* SideMenuViewController.swift in Sources */,
@@ -488,6 +507,7 @@
 				F254968E1D21C77C000493BB /* IngredientTableViewCell.swift in Sources */,
 				F24EFE651D1C6FA700C59430 /* GuillotineMenuTransitionAnimation.swift in Sources */,
 				F25496821D21B62D000493BB /* ProfileViewController.swift in Sources */,
+				F23B19CE1D23009000147190 /* DataController.swift in Sources */,
 				F24EFE5F1D1C621300C59430 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -738,6 +758,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F23B19C81D22FF4200147190 /* UrCalData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F23B19C91D22FF4200147190 /* UrCalData.xcdatamodel */,
+			);
+			currentVersion = F23B19C91D22FF4200147190 /* UrCalData.xcdatamodel */;
+			path = UrCalData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F24EFE1E1D1C5FD800C59430 /* Project object */;
 }
