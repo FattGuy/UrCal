@@ -18,7 +18,7 @@ extension FoodPlan {
     @NSManaged var meat_name: String?
     @NSManaged var snack_name: String?
     @NSManaged var supp_name: String?
-    @NSManaged var total_calorie: Double
+    @NSManaged var total_calorie: NSNumber?
     @NSManaged var vege_name: String?
 
 }

@@ -14,7 +14,7 @@ import CoreData
 
 extension Snack {
 
-    @NSManaged var calorie: Double
+    @NSManaged var calorie: NSNumber?
     @NSManaged var name: String?
 
 }

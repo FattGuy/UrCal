@@ -14,7 +14,7 @@ import CoreData
 
 extension Carb {
 
-    @NSManaged var calorie: Double
+    @NSManaged var calorie: NSNumber?
     @NSManaged var name: String?
 
 }
